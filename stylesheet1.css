@@ -4,7 +4,7 @@ body {
     margin: 2cm;
 }
 h1 {
-    align-items: center;
+    text-align: center;
     font-family: andale mono, monospace;
     font-size: 300%;
     color: rgb(87, 10, 37);
@@ -12,6 +12,10 @@ h1 {
 
 p {
     color: rgb(87, 10, 37);
-    font-size: 150%;
+    font-size: 200%;
     font-family: monospace;
+}
+
+#sig {
+    text-align: right;
 }
