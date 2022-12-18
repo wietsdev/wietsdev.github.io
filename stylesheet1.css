@@ -1,9 +1,17 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: cornflowerblue;
+    background-color: rgb(229, 212, 218);
+    margin: 2cm;
 }
 h1 {
     align-items: center;
-    font-size: large;
-    
+    font-family: andale mono, monospace;
+    font-size: 300%;
+    color: rgb(87, 10, 37);
   }
+
+p {
+    color: rgb(87, 10, 37);
+    font-size: 150%;
+    font-family: monospace;
+}
