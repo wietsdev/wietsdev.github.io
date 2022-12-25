@@ -4,6 +4,20 @@
 <head>
     <meta name = "robots" content="noindex,nofollow">
     <link rel="stylesheet" href="stylesheet1.css">
+
+    <script>
+        function toggleTheme() {
+            // Obtains an array of all <link> elements
+            var theme = document.getElementsByTagName('link')[0];
+  
+            if (theme.getAttribute('href') == 'stylesheet1.css') {
+                theme.setAttribute('href', 'stylesheet2.css');
+            } else {
+                theme.setAttribute('href', 'stylesheet1.css');
+            }
+        }
+    </script>
+
     <title> wietsdev web</title>
 </head>
 <body>
@@ -11,6 +25,8 @@
     <h1> Hello World :D </h1>
 
     <p id="sig"> -W  </p>
+
+    <button onclick="toggleTheme()">I'm indecisive :)</button>
 
 </body>
 </html>

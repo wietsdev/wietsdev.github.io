@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(229, 212, 218);
+    background-color: rgb(193, 221, 179);
     margin: 2cm;
 }
 h1 {
@@ -20,7 +20,7 @@ p {
 .button {
     transition-duration: 0.4s;
     background-color:rgb(87, 10, 37);
-    color: rgb(229, 212, 218);
+    color: rgb(193, 221, 179);
     border-radius:2%;
     padding: 20px 32px;
     text-align: center;
@@ -30,7 +30,7 @@ p {
 }
 
 .button:hover {
-    background-color: rgb(250, 114, 152);
+    background-color: rgb(144, 225, 104);
     color: rgb(87, 10, 37);
 }
 
