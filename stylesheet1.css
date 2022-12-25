@@ -18,13 +18,16 @@ p {
 }
 
 .button {
+    width:2cm;
+    height:0.7cm;
     transition-duration: 0.4s;
     background-color:rgb(87, 10, 37);
     color: rgb(229, 212, 218);
-    border-radius:2%;
+    font-family: andale mono, monospace;
+    border-radius:6%;
     padding: 20px 32px;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     border: none;
     display: inline-block;
 }
