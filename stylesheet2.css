@@ -1,3 +1,9 @@
+:root {
+    --mainCol2: rgb(193, 221, 179);
+    --subCol2: rgb(87, 10, 37);
+    --accentCol2: rgb(116, 227, 60);
+  }
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(193, 221, 179);
@@ -8,7 +14,14 @@ h1 {
     font-family: andale mono, monospace;
     font-size: 300%;
     color: rgb(87, 10, 37);
-  }
+}
+
+h2 {
+    text-align: center;
+    font-family: andale mono, monospace;
+    font-size: 200%;
+    color: var(--subCol2);
+}
 
 p {
     color: rgb(87, 10, 37);
@@ -19,7 +32,7 @@ p {
 }
 
 .button {
-    width: 3cm;
+    width: 4cm;
     height: 0.9cm;
     transition-duration: 0.4s;
     background-color:rgb(87, 10, 37);

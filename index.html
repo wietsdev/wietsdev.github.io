@@ -1,32 +1,62 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta name = "robots" content="noindex,nofollow">
-    <link rel="stylesheet" href="stylesheet1.css">
+  <head>
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="stylesheet" href="stylesheet1.css" />
 
     <script>
-        function toggleTheme() {
-            // Obtains an array of all <link> elements
-            var theme = document.getElementsByTagName('link')[0];
-  
-            if (theme.getAttribute('href') == 'stylesheet1.css') {
-                theme.setAttribute('href', 'stylesheet2.css');
-            } else {
-                theme.setAttribute('href', 'stylesheet1.css');
-            }
+      // Get the root element
+      var theme = 'peach'
+      var r = document.querySelector(":root");
+      var rs = getComputedStyle(r);
+      // var greenMain = "rgb(193, 221, 179)";
+      // var peachMain = "rgb(232, 204, 202)";
+
+      // function themeColor_get() {
+      //     // Get the styles (properties and values) for the root
+      //     var rs = getComputedStyle(r);
+      //     // Alert the value of the --blue variable
+      //     alert("The value of --mainCol is: " + (rs.getPropertyValue('--mainCol') == peachMain));
+      // }
+
+      function toggleTheme() {
+        // Set the value of variable --mainCol to another value
+        var rs = getComputedStyle(r);
+        if (theme == 'peach') {
+          console.log("if true peach");
+          r.style.setProperty("--mainCol", "rgb(193, 221, 179)");
+          //r.style.setProperty("--subCol", "rgb(193, 221, 179)");
+          r.style.setProperty("--accentCol", "rgb(116, 227, 60)");
+          theme = 'green';
+        } else if (theme == 'green') {
+          r.style.setProperty("--mainCol", "rgb(232, 204, 202)");
+          //r.style.setProperty("--subCol", "rgb(193, 221, 179)");
+          r.style.setProperty("--accentCol", "rgb(250, 114, 152)");
+          theme = 'peach';
         }
+      }
+
+      // function toggleTheme() {
+      //     // Obtains an array of all <link> elements
+      //     var theme = document.getElementsByTagName('link')[0];
+
+      //     if (theme.getAttribute('href') == 'stylesheet1.css') {
+      //         theme.setAttribute('href', 'stylesheet2.css');
+      //     } else {
+      //         theme.setAttribute('href', 'stylesheet1.css');
+      //     }
+      // }
     </script>
 
-    <title> wietsdev web</title>
-</head>
-<body>
-    
-    <button class="button" onclick="toggleTheme()">Indecisive?</button>
+    <title>wietsdev web</title>
+  </head>
+  <body>
+    <button class="button" onclick="toggleTheme()">Switch it up</button>
 
-    <h1> Hello World :D </h1>
+    <h1>WIETSDEV</h1>
 
-    <p id="sig"> -W  </p>
+    <h2>Hello World, welcome :D</h2>
 
-</body>
+    <p id="sig">-W</p>
+  </body>
 </html>

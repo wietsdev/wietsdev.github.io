@@ -1,43 +1,63 @@
+:root {
+  --peachMain: rgb(232, 204, 202);
+  --peachSub: rgb(87, 10, 37);
+  --peachAccent: rgb(250, 114, 152);
+  --greenMain: rgb(193, 221, 179);
+  --greenSub: rgb(87, 10, 37);
+  --greenAccent: rgb(116, 227, 60);
+  --mainCol: rgb(232, 204, 202);
+  --subCol: rgb(87, 10, 37);
+  --accentCol: rgb(250, 114, 152);
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(229, 212, 218);
-    margin: 1cm;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--mainCol);
+  margin: 1cm;
 }
 h1 {
-    text-align: center;
-    font-family: andale mono, monospace;
-    font-size: 300%;
-    color: rgb(87, 10, 37);
-  }
+  text-align: center;
+  font-family: andale mono, monospace;
+  font-size: 600%;
+  color: var(--subCol);
+  margin: 1%
+}
+
+h2 {
+  text-align: center;
+  font-family: andale mono, monospace;
+  font-size: 150%;
+  color: var(--subCol);
+}
 
 p {
-    color: rgb(87, 10, 37);
-    font-size: 200%;
-    font-family: andale mono, monospace;
-    padding: 0.5cm 1cm;
-    margin:2%
+  color: var(--subCol);
+  font-size: 200%;
+  font-family: andale mono, monospace;
+  padding: 0.5cm 1cm;
+  margin: 2%;
 }
 
 .button {
-    width:3cm;
-    height:0.9cm;
-    transition-duration: 0.4s;
-    background-color:rgb(87, 10, 37);
-    color: rgb(229, 212, 218);
-    font-family: andale mono, monospace;
-    border-radius:6%;
-    padding: 0.3% 0.3%;
-    text-align: center;
-    font-size: 16px;
-    border: none;
-    display: inline-block;
+  width: 4cm;
+  height: 0.9cm;
+  transition-duration: 0.4s;
+  background-color: var(--subCol);
+  color: var(--mainCol);
+  font-family: andale mono, monospace;
+  border-radius: 6%;
+  padding: 0.3% 0.3%;
+  text-align: center;
+  font-size: 16px;
+  border: none;
+  display: inline-block;
 }
 
 .button:hover {
-    background-color: rgb(250, 114, 152);
-    color: rgb(87, 10, 37);
+  background-color: var(--accentCol);
+  color: var(--subCol);
 }
 
 #sig {
-    text-align: right;
+  text-align: right;
 }
