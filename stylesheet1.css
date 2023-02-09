@@ -20,7 +20,7 @@ h1 {
   font-family: andale mono, monospace;
   font-size: 600%;
   color: var(--subCol);
-  margin: 1%
+  margin: 0%
 }
 
 h2 {
@@ -28,11 +28,12 @@ h2 {
   font-family: andale mono, monospace;
   font-size: 150%;
   color: var(--subCol);
+  margin: 1%;
 }
 
 p {
   color: var(--subCol);
-  font-size: 200%;
+  font-size: 120%;
   font-family: andale mono, monospace;
   padding: 0.5cm 1cm;
   margin: 2%;
@@ -60,4 +61,22 @@ p {
 
 #sig {
   text-align: right;
+}
+
+#webring {
+  position: sticky;
+  bottom: 0;
+  right: auto;
+  text-align: center;
+}
+
+img {
+  border-radius: 4%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: rgb(250, 114, 152);
 }
