@@ -10,73 +10,105 @@
   --accentCol: rgb(250, 114, 152);
 }
 
+@font-face {
+  font-family: teko;
+  src: url(./Teko/Teko-Regular.ttf);
+}
+
+@font-face {
+  font-family: zeyada;
+  src: url(./Zeyada/Zeyada-Regular.ttf);
+}
+
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: var(--mainCol);
+  font-family: zeyada, teko, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: rgb(160,49,187);
+  background: linear-gradient(120deg, rgba(160,49,187,0.55) 4%, rgba(253,96,29,0.35) 57%, rgba(252,142,69,0.55) 76%, rgba(252,69,137,0.60) 95%);
   margin: 1cm;
 }
 h1 {
   text-align: center;
-  font-family: andale mono, monospace;
+  font-family: zeyada, teko, andale mono, monospace;
   font-size: 600%;
   color: var(--subCol);
-  margin: 0%
+  margin: -2%;
+  font-weight: 300; 
 }
 
 h2 {
   text-align: center;
-  font-family: andale mono, monospace;
-  font-size: 150%;
+  font-family: zeyada, teko, andale mono, monospace;
+  font-size: 200%;
   color: var(--subCol);
-  margin: 1%;
+  margin: 0%;
+  font-weight: 500;
 }
 
 p {
   color: var(--subCol);
-  font-size: 120%;
-  font-family: andale mono, monospace;
+  font-size: 180%;
+  font-family: zeyada, teko, andale mono, monospace;
   padding: 0.5cm 1cm;
   margin: 2%;
+  font-weight: bold;
 }
 
 .button {
-  width: 4cm;
-  height: 0.9cm;
+  
   transition-duration: 0.4s;
   background-color: var(--subCol);
   color: var(--mainCol);
-  font-family: andale mono, monospace;
+  font-family: zeyada, andale mono, monospace;
   border-radius: 6%;
-  padding: 0.3% 0.3%;
+  padding: 0.6% 1.2%;
   text-align: center;
-  font-size: 16px;
+  font-size: 24px;
   border: none;
   display: inline-block;
+  box-shadow: 2px 2px 5px rgb(87, 10, 37);
 }
 
 .button:hover {
   background-color: var(--accentCol);
   color: var(--subCol);
+  cursor: pointer;
+  font-weight: bolder;
 }
 
 #sig {
+  font-family: zeyada, teko, andale mono;
   text-align: right;
+  position: sticky;
+  bottom: 0;
 }
 
 #webring {
-  position: sticky;
   bottom: 0;
+  position: sticky;
   right: auto;
   text-align: center;
+  mix-blend-mode: difference;
 }
 
 img {
-  border-radius: 4%;
+  border-radius: 8%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 4px 4px 5px rgb(87, 10, 37);
 }
 
 a {
   color: rgb(250, 114, 152);
+  font-weight: bolder;
+  text-decoration: none;
 }
+
+/* .blur {
+  /* background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  height: 20%;
+	width: 20%; */
+  /* filter: blur(10px) brightness(0.5) hue-rotate(180deg);
+  -webkit-filter: blur(10px) brightness(0.5) hue-rotate(180deg); */
+ */
