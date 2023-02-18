@@ -22,8 +22,8 @@
 
 body {
   font-family: zeyada, teko, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: rgb(160,49,187);
-  background: linear-gradient(120deg, rgba(160,49,187,0.55) 4%, rgba(253,96,29,0.35) 57%, rgba(252,142,69,0.55) 76%, rgba(252,69,137,0.60) 95%);
+  /* background: rgb(160,49,187); */
+  background: #D6F4FF;
   margin: 1cm;
 }
 h1 {
@@ -33,15 +33,24 @@ h1 {
   color: var(--subCol);
   margin: -2%;
   font-weight: 300; 
+  position: absolute;
+  top:  57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 h2 {
   text-align: center;
   font-family: zeyada, teko, andale mono, monospace;
-  font-size: 200%;
+  font-size: 260%;
   color: var(--subCol);
   margin: 0%;
   font-weight: 500;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode:hard-light;
 }
 
 p {
@@ -104,11 +113,45 @@ a {
   text-decoration: none;
 }
 
-/* .blur {
-  /* background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(20px);
-  height: 20%;
-	width: 20%; */
-  /* filter: blur(10px) brightness(0.5) hue-rotate(180deg);
-  -webkit-filter: blur(10px) brightness(0.5) hue-rotate(180deg); */
- */
+#titleCloud {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#projectCloud {
+  position: absolute;
+  top: 30%;
+  left: 82%;
+  transform: translate(-50%, -50%);
+}
+
+#miscCloud {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+#likesCloud {
+  position: absolute;
+  top: 80%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+}
+
+#miniClouds {
+  position: absolute; /*play around w sticky */
+  top: 48%;
+  left: 44%;
+  transform: translate(-50%, -50%);
+}
+
+#cloudBlurs {
+  position:sticky;
+  z-index: -10;
+  top: 60%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+}
