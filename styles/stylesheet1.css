@@ -20,19 +20,24 @@
   src: url(./Zeyada/Zeyada-Regular.ttf);
 }
 
+@font-face {
+  font-family: oleo;
+  src: url(./Oleo_Script/OleoScript-Regular.ttf);
+}
+
 body {
-  font-family: zeyada, teko, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: oleo, zeyada, teko, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   /* background: rgb(160,49,187); */
   background: #D6F4FF;
   margin: 1cm;
 }
 h1 {
   text-align: center;
-  font-family: zeyada, teko, andale mono, monospace;
-  font-size: 600%;
+  font-family: oleo, zeyada, teko, andale mono, monospace;
+  font-size: 500%;
   color: var(--subCol);
   margin: -2%;
-  font-weight: 300; 
+  font-weight: 200; 
   position: absolute;
   top:  57%;
   left: 50%;
@@ -41,22 +46,22 @@ h1 {
 
 h2 {
   text-align: center;
-  font-family: zeyada, teko, andale mono, monospace;
-  font-size: 260%;
-  color: var(--subCol);
+  font-family: oleo, zeyada, teko, andale mono, monospace;
+  font-size: 160%;
+  color:#b44e47;
   margin: 0%;
   font-weight: 500;
   position: absolute;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  mix-blend-mode:hard-light;
+  /* mix-blend-mode:hard-light; */
 }
 
 p {
-  color: var(--subCol);
+  color: lightgray;
   font-size: 180%;
-  font-family: zeyada, teko, andale mono, monospace;
+  font-family: oleo, zeyada, teko, andale mono, monospace;
   padding: 0.5cm 1cm;
   margin: 2%;
   font-weight: bold;
@@ -67,7 +72,7 @@ p {
   transition-duration: 0.4s;
   background-color: var(--subCol);
   color: var(--mainCol);
-  font-family: zeyada, andale mono, monospace;
+  font-family: oleo, zeyada, andale mono, monospace;
   border-radius: 6%;
   padding: 0.6% 1.2%;
   text-align: center;
@@ -85,7 +90,7 @@ p {
 }
 
 #sig {
-  font-family: zeyada, teko, andale mono;
+  font-family: oleo, zeyada, teko, andale mono;
   text-align: right;
   position: sticky;
   bottom: 0;
@@ -96,7 +101,7 @@ p {
   position: sticky;
   right: auto;
   text-align: center;
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
 }
 
 img {
