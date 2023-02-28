@@ -2,43 +2,43 @@
 <html>
   <head>
     <meta name="robots" content="noindex,nofollow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/stylesheet1.css" />
     <link rel="icon" type="image/png" href="./assets/webIconW.png">
+    <title>wiets.dev</title>
 
     <script>
       // Get the root element
       var theme = 'peach'
       var r = document.querySelector(":root");
       var rs = getComputedStyle(r);
-      // var greenMain = "rgb(193, 221, 179)";
-      // var peachMain = "rgb(232, 204, 202)";
 
+      //temporarily unused while the website design evolves
       function toggleTheme() {
         // Set the value of variable --mainCol to another value
         var rs = getComputedStyle(r);
         if (theme == 'peach') {
           console.log("if true peach");
           r.style.setProperty("--mainCol", "rgb(193, 221, 179)");
-          //r.style.setProperty("--subCol", "rgb(193, 221, 179)");
           r.style.setProperty("--accentCol", "rgb(116, 227, 60)");
           theme = 'green';
         } else if (theme == 'green') {
           r.style.setProperty("--mainCol", "rgb(232, 204, 202)");
-          //r.style.setProperty("--subCol", "rgb(193, 221, 179)");
           r.style.setProperty("--accentCol", "rgb(250, 114, 152)");
           theme = 'peach';
         }
       }
     </script>
 
-    <title>wietsdev web</title>
   </head>
   <body>
+    <!-- temporarily unused while the website design evolves -->
     <!-- <button class="button" onclick="toggleTheme()">Switch it up</button> -->
 
     <h1>WIETS.DEV</h1>
+    <h2>Hello World, welcome :D</h2>
 
+    <!-- title cloud -->
     <div id="titleCloud"> 
       <svg width="522" height="270" viewBox="0 0 522 270" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_d_22_11)">
@@ -64,8 +64,7 @@
         
     </div>
 
-    <h2>Hello World, welcome :D</h2>
-
+    <!-- experience cloud -->
     <div id="projectCloud"> 
       <svg width="298" height="183" viewBox="0 0 298 183" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_df_28_5)">
@@ -92,6 +91,7 @@
         
     </div>
 
+    <!-- misc cloud -->
     <div id="miscCloud">
       <svg width="311" height="170" viewBox="0 0 311 170" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_df_28_4)">
@@ -118,6 +118,7 @@
         
     </div>
 
+    <!-- personality cloud -->
     <div id="likesCloud">
       <svg width="300" height="173" viewBox="0 0 300 173" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_df_28_3)">
@@ -145,10 +146,10 @@
         <!-- <p> <a href="./about.html"> About me</a> </p> -->
     </div>
 
+    <!-- add back some pics later -->
     <!-- <img src="victoriaStPic.jpg" alt="Victoria street with christmas lights" width="400" height="600"> -->
 
-    
-    
+    <!-- mini background clouds -->
     <div id="miniClouds"> 
       <svg width="1117" height="591" viewBox="0 0 1117 591" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_f_33_19)">
@@ -193,6 +194,7 @@
         
     </div>
 
+    <!-- blurs in background to add more depth to the sky -->
     <div id="cloudBlurs">
       <svg width="1440" height="1024" viewBox="0 0 1440 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_f_33_20)">

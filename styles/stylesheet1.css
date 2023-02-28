@@ -37,11 +37,12 @@ h1 {
   font-size: 500%;
   color: var(--subCol);
   margin: -2%;
-  font-weight: 200; 
+  /* font-weight: 200;  */
   position: absolute;
   top:  57%;
   left: 50%;
   transform: translate(-50%, -50%);
+  mix-blend-mode:hard-light;
 }
 
 h2 {
@@ -50,12 +51,12 @@ h2 {
   font-size: 160%;
   color:#b44e47;
   margin: 0%;
-  font-weight: 500;
+  /* font-weight: 500; */
   position: absolute;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* mix-blend-mode:hard-light; */
+  mix-blend-mode:darken;
 }
 
 p {
